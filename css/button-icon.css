@@ -1,0 +1,21 @@
+.button-icon {
+  padding: 1vh;
+  border-radius: 4px;
+  background: var(--white);
+  border: 2px solid var(--purple);
+  text-decoration: none;
+  display: inline-block;
+  transition: .4s;
+}
+
+
+.button-icon a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-icon:hover{
+  background: #4e099c79;
+  border: 2px solid var(--white);
+
+}

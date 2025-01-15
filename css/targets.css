@@ -1,0 +1,48 @@
+.Contain {
+    display: flex;
+    position: relative;
+    padding: 6%;
+    border-radius: 40px;
+    align-items: center;
+    width: 119vh;
+    height: 50vh;
+    max-height: 50vh;
+    border: 1px solid var(--white);
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 20px;
+}
+.Contain:hover{
+    overflow-y: scroll;
+
+    scrollbar-color: #00000000 #f1f1f100; /* Color del pulgar y fondo en Firefox */
+    scrollbar-width: thin;
+}
+.Contain .target {
+    border: 1px solid rgba(4, 79, 165, 0.705);
+    width: 50vh;
+    height: 40vh;
+    margin-left: 1.4%;
+    background-color: #853cd82c;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.Contain .target h1 {
+    text-align: center;
+    line-height: 1.0;
+    padding-bottom: 2vh;
+}
+
+.Contain .target .subtarget {
+    display: flex;
+    margin-top: 1.5vh;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+}
+
+.Contain .target .subtarget:hover {
+    color: rgba(43, 24, 219, 0.774);
+}

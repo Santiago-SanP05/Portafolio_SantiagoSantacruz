@@ -1,0 +1,52 @@
+@keyframes degradadoAnimado {
+  0% {
+    background-image: linear-gradient(45deg, #66ff00, #66ff00);
+  }
+  15% {
+    background-image: linear-gradient(45deg, #66ff00, #cffd00);
+  }
+  25% {
+    background-image: linear-gradient(45deg, #cffd00, #ffae00);
+  }
+  35% {
+    background-image: linear-gradient(45deg, #9cffef, #2f8a7b);
+  }
+  45% {
+    background-image: linear-gradient(45deg, #34006b, #495c7c);
+  }
+  55% {
+    background-image: linear-gradient(45deg, #fd0ac9, #5e0a3b);
+  }
+  65% {
+    background-image: linear-gradient(45deg, #ff0000, #d63d00);
+  }
+  85% {
+    background-image: linear-gradient(45deg, #060053, #dd56ff);
+  }
+  100% {
+    background-image: linear-gradient(45deg, #66ff00, #66ff00);
+  }
+}
+
+.title {
+  background: var(--purple);
+  align-self: flex-start;
+  color: var(--white);
+  font: var(--headline5);
+  padding-block-start: 4px;
+  padding-block-end: 4px;
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
+  text-decoration: none;
+  /* margin-inline-start: 4px; */
+  box-shadow: -4px 4px 0 var(--white);
+}
+
+.textoAnimado {
+  font-size: 50px;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: degradadoAnimado 5s ease infinite;
+}

@@ -1,0 +1,38 @@
+.menu {
+  display: none;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.menu ul a {
+  text-decoration: none;
+  color: var(--white);
+  font: var(--button);
+  text-transform: uppercase;
+  transition: .6s;
+}
+
+.menu ul a.is-active {
+  color: var(--purple);
+}
+
+.menu ul li a:hover{
+  color:red;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(0.1);
+  font-size: 1.2em;
+  animation: degradadoAnimado 2s ease infinite;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: block;
+  }
+}
